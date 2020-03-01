@@ -1,4 +1,4 @@
-def turn
+def turn(board)
 
 end
 
@@ -17,10 +17,12 @@ def valid_move?(board, index)
   if board[index] != "X" or board[index] != "O" or board[index] != nil
     return true
   end
-  
+
   return false
 end
 
-def move
-
+def move(board, index, player)
+  if valid_move?(board, index)
+    board[index] = player
+  end
 end
