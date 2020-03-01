@@ -6,7 +6,6 @@ def turn(board)
     index = gets
     index = input_to_index(index)
   end
-
   move(board, index)
   display_board(board)
 end
