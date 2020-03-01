@@ -11,8 +11,13 @@ end
 def input_to_index(input)
   return input.to_i - 1
 end
-def valid_move?
 
+def valid_move?(board, index)
+
+  if board[index] != "X" or board[index] != "O" or board[index] != nil
+    return true
+  end
+  return false
 end
 
 def move
