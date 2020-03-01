@@ -28,4 +28,4 @@ def move(board, index, player)
   end
 end
 
-puts valid_move?([" ", " ", " ", " ", "X", " ", " ", " ", " "], 4)
+puts valid_move?([" ", " ", " ", " ", "X", " ", " ", " ", " "], -1)
