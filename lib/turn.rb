@@ -31,3 +31,5 @@ def move(board, index, player)
     board[index] = player
   end
 end
+
+puts valid_move?([" ", " ", " ", " ", "X", " ", " ", " ", " "], 0)
