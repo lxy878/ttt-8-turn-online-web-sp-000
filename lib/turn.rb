@@ -33,4 +33,4 @@ def move(board, index, player)
 end
 
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-puts board[-1] == nil
+puts board[-1]
