@@ -5,7 +5,7 @@ def turn(board)
   if valid_move(board, index)
 
   else
-    
+
   end
 end
 
@@ -34,9 +34,7 @@ def valid_move?(board, index)
 end
 
 def move(board, index, player)
-  if valid_move?(board, index)
-    board[index] = player
-  end
+  board[index] = player
 end
 
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
