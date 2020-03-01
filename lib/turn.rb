@@ -2,6 +2,12 @@ def turn(board)
   puts "Please enter 1-9:"
   index = gets
   index = input_to_index(index)
+  if valid_move(board, index)
+
+    display_board(board)
+  else
+
+  end
 end
 
 def display_board(board)
@@ -28,9 +34,9 @@ def valid_move?(board, index)
   return false
 end
 
-def move(board, index, player)
+def move(board, index, player="")
   board[index] = player
 end
 
-board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts board[10] == nil
