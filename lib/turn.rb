@@ -19,7 +19,7 @@ def valid_move?(board, index)
     return false
   end
 
-  if board[index] != "X" and board[index] != "O"
+  if board[index] != "X" and board[index] != "O" and board[index] != nil
     return true
   end
 
